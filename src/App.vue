@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import DuckWelcome from '@components/DuckWelcome.vue'
+import Header from '@/components/header.vue';
+
 </script>
 
 <template>
-  <DuckWelcome />
+  <div class="bg-black  w-full h-100vh">
+    <Header />
+
+
+
+  </div>
 </template>
