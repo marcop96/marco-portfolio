@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Header from '@/components/header.vue';
-
+import TheHeader from '@/components/TheHeader.vue';
+import TheIntro from '@/components/TheIntro.vue';
 </script>
 
 <template>
   <div class="bg-black  w-full h-100vh">
-    <Header />
-
+    <TheHeader />
+    <TheIntro />
 
 
   </div>
