@@ -5,7 +5,7 @@ import type { Project } from '@/types';
 const projects: Project[] = [{
   title: 'Ecommerce site',
   description: 'A frontend project made with VueJS to create a fully functional ecommerce site.',
-  image: "@/assets/vuecommerce-img.png",
+  image: '@/assets/img/vuecommerce-img.png',
   technologies: ['Vue', 'Tailwind', 'Vercel'],
   links: [
     {
