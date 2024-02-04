@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue';
 import TheIntro from '@/components/TheIntro.vue';
+import TheProjects from '@/components/TheProjects.vue';
 </script>
 
 <template>
-  <div class="bg-black  w-full h-100vh">
+  <div class="flex flex-col justify-center bg-black">
     <TheHeader />
-    <TheIntro />
+    <div class="flex flex-col items-center justify-center  bg-black  ">
+      <!-- <TheIntro /> -->
 
-
+      <TheProjects />
+    </div>
   </div>
 </template>
