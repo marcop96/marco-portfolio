@@ -6,7 +6,7 @@ const projects: Project[] = [{
   title: 'Ecommerce site',
   description: 'A frontend project made with VueJS to create a fully functional ecommerce site.',
   image: '@/assets/img/vuecommerce-img.png',
-  technologies: ['devicon:vuejs', 'devicon:tailwind', 'devicon:vercel'],
+  technologies: ['devicon:vuejs', 'devicon:tailwindcss', 'devicon:vercel'],
   links: [
     {
       name: 'Github',
@@ -25,7 +25,7 @@ const projects: Project[] = [{
   title: 'FutbOrg',
   description: 'Football organization project with a google sheets backend to manage teams, matches and players.',
   image: '@/assets/futborg-img.png',
-  technologies: ['devicon:vuejs', 'devicon:tailwind', 'devicon:googlecloud'],
+  technologies: ['devicon:vuejs', 'devicon:googlecloud'],
   links: [
     {
       name: 'Github',
@@ -42,7 +42,7 @@ const projects: Project[] = [{
   title: 'Expense tracker app',
   description: 'An app made with React to track expenses and income. It uses local storage to save the data.',
   image: '@/assets/expense-tracker-img.png',
-  technologies: ['React', 'Tailwind', 'Local storage'],
+  technologies: ['devicon:react', 'devicon:tailwindcss'],
   links: [
     {
       name: 'Github',
@@ -78,20 +78,25 @@ const projects: Project[] = [{
     </div>
   </div> -->
 
-  <div v-for="project in  projects " :key="project.title" class="flex m-4 p-4 bg-gray rounded-lg ">
+  <div v-for="project in  projects " :key="project.title" class="flex m-4 p-4 bg-gray rounded-lg shadow
+  shadow-sm shadow-black ">
     <img :src="project.image" class=" h-64 w-64 object-cover rounded-lg" />
-    <div class="flex flex-col  w-full">
-      <p class="text-2xl w-fit">{{ project.title }}</p>
-      <p class=" my-2 text-center max-w-96 overscroll-auto">{{ project.description }}</p>
 
-      <div class=" flex space-x-4 mt-4 w-fit">
-        <div v-for="technology in project.technologies" :key="technology" class="flex ">
-          <PillButton :icon="technology" styles="bg-black" />
-        </div>
+    <div class="flex flex-col justify-center w-full">
+      <p class="text-2xl w-fit ">{{ project.title }}</p>
+      <div class="flex space-x-2 justify-center w-fit">
+        <PillButton v-for="technology in project.technologies" :key="technology" :icon="technology"
+          styles="bg-white rounded-xl " />
       </div>
-      <PillButton :url="project.links[0].url" :icon="project.links[0].icon" styles="bg-black" />
-      <PillButton :url="project.links[1].url" :icon="project.links[1].icon" styles="bg-black" />
+      <p class=" my-2  max-w-96  overscroll-auto">{{ project.description }}</p>
+
+
+      <div class="flex justify-end ">
+        <PillButton v-for="link in project.links" :key="link.name" :url="link.url" :icon="link.icon"
+          styles="bg-white text-black  h-fit align-bottom rounded-xl mx-1 w-fit " />
+      </div>
     </div>
+
   </div>
 </template>
 
