@@ -6,7 +6,7 @@ const projects: Project[] = [{
   title: 'Ecommerce site',
   description: 'A frontend project made with VueJS to create a fully functional ecommerce site.',
   image: '@/assets/img/vuecommerce-img.png',
-  technologies: ['Vue', 'Tailwind', 'Vercel'],
+  technologies: ['devicon:vuejs', 'devicon:tailwind', 'devicon:vercel'],
   links: [
     {
       name: 'Github',
@@ -25,7 +25,7 @@ const projects: Project[] = [{
   title: 'FutbOrg',
   description: 'Football organization project with a google sheets backend to manage teams, matches and players.',
   image: '@/assets/futborg-img.png',
-  technologies: ['Vue', 'Tailwind', 'Google sheets'],
+  technologies: ['devicon:vuejs', 'devicon:tailwind', 'devicon:googlecloud'],
   links: [
     {
       name: 'Github',
@@ -56,9 +56,6 @@ const projects: Project[] = [{
     }]
 }]
 
-for (let i = 0; i < projects.length; i++) {
-  console.log((projects[i].image))
-}
 </script>
 
 <template>
@@ -80,17 +77,20 @@ for (let i = 0; i < projects.length; i++) {
       </div>
     </div>
   </div> -->
-  <!-- photo at the left, title, icons displaying technologies used under title description under icons, github and repository icons under everything -->
-  <div v-for="project in projects" :key="project.title" class="flex m-4 p-4 bg-gray rounded-lg ">
+
+  <div v-for="project in  projects " :key="project.title" class="flex m-4 p-4 bg-gray rounded-lg ">
     <img :src="project.image" class=" h-64 w-64 object-cover rounded-lg" />
     <div class="flex flex-col  w-full">
       <p class="text-2xl w-fit">{{ project.title }}</p>
       <p class=" my-2 text-center max-w-96 overscroll-auto">{{ project.description }}</p>
 
-      <div class="flex  space-x-4 mt-4">
-        <PillButton :url="project.links[0].url" :icon="project.links[0].icon" styles="bg-black" />
-        <PillButton :url="project.links[1].url" :icon="project.links[1].icon" styles="bg-black" />
+      <div class=" flex space-x-4 mt-4 w-fit">
+        <div v-for="technology in project.technologies" :key="technology" class="flex ">
+          <PillButton :icon="technology" styles="bg-black" />
+        </div>
       </div>
+      <PillButton :url="project.links[0].url" :icon="project.links[0].icon" styles="bg-black" />
+      <PillButton :url="project.links[1].url" :icon="project.links[1].icon" styles="bg-black" />
     </div>
   </div>
 </template>
