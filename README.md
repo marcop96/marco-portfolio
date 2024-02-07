@@ -1,29 +1,17 @@
-# Duck vue starter
+todo
 
-Nice to see you here!
+-create 2 views for the project cards
 
-This is an opinionated [Vue](https://vuejs.org/) starter.
+-pick colors
 
-### How to use it
-Run this to clone it and start from a clean git history.
+-tidy up card layouts
 
-```bash
-npx degit readpato/duck-vue-starter my-duck-app
-cd my-duck-app
-pnpm i # Or whatever you are using =]
-```
-### Support
+-fix img sources
 
-You can contact me through:
+<!-- - navbar position  -->
+<!-- -navbar blur? -->
+-navbar hover
 
-- Twitter: [@patoraedler](https://twitter.com/patoraedler)
-- Email: code@readpato.dev
+-create card component
 
-### Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-### Author
-
-Patrick Raedler.
 
