@@ -19,7 +19,7 @@ const contactMeText = {
 
     <div class="flex justify-center space-x-4">
       <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:email"
-        :href="'mailto:' + contactMeText.email" />
+        :href="'mailto:' + contactMeText.email + '?subject=Front end developer position'" />
       <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-github"
         :href="contactMeText.gitHub" />
       <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-linkedin"
