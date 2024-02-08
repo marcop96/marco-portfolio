@@ -15,19 +15,23 @@ const contactMeText = {
 </script>
 
 <template>
-  z <main class="text-white flex flex-col justify-center mt-2 w-1/2 mx-auto h-100vh align-top ">
+  z <main class="text-white flex flex-col justify-center  w-1/2 mx-auto h-100vh align-top ">
 
+    <div class="flex justify-center space-x-4">
+      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:email"
+        :href="'mailto:' + contactMeText.email" />
+      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-github"
+        :href="contactMeText.gitHub" />
+      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-linkedin"
+        :href="contactMeText.linkedIn" />
+    </div>
 
     <h1 class="text-3xl">Contact Me</h1>
     <p>{{ contactMeText.introduction }}</p>
     <h1 class='text-3xl'>Let's Build Together</h1>
     <p>{{ contactMeText.buildTogether }}</p>
-    <h1 class='text-3xl'>How to Reach Me</h1>
-    <PillButton styles="bg-black " icon="carbon:email" :href="'mailto:' + contactMeText.email" />
-    <PillButton styles="bg-black " icon="carbon:logo-github" :href="contactMeText.gitHub" />
-    <PillButton styles="bg-black " icon="carbon:logo-linkedin" :href="contactMeText.linkedIn" />
+    <br />
 
-    <p>{{ contactMeText.availability }}</p>
 
   </main>
 </template>

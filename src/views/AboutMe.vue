@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="text-white mt-16 mx-21 justify-center">
+  z <main class="text-white flex flex-col justify-center  w-1/2 mx-auto h-100vh align-top ">
     <h1 class="text-4xl font-bold mb-8">Hi, I'm Marco Pianaroli</h1>
     <p class="text-lg mb-6">Welcome to my world of creativity and innovation!</p>
     <p class="text-lg mb-6">As a front-end developer, I combine my passion for gaming with my expertise in web development
@@ -17,5 +17,5 @@
       development and
       make a meaningful impact in the digital world.</p>
 
-  </div>
+  </main>
 </template>
