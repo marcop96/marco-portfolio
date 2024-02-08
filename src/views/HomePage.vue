@@ -6,9 +6,8 @@ import ContactMe from '@/views/ContactMe.vue';
 </script>
 
 <template>
-  <div class=" ">
-    <TheIntro />
-    <AboutMe />
-    <ContactMe />
-  </div>
+  <TheIntro />
+  <TheProjects />
+  <AboutMe />
+  <ContactMe />
 </template>
