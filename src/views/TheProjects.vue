@@ -54,32 +54,21 @@ const projects: Project[] = [{
       url: 'https://expense-tracker-neon-kappa.vercel.app/',
       icon: 'carbon:deploy'
     }]
-}]
+}
+]
 
 </script>
 
 <template>
-  <div class="flex  justify-center text-white align-mid mt-20 ">
+  <div class="flex h-fit justify-center text-white mt-15 ">
     <PillButton styles="bg-black" icon="carbon:ibm-cloud-bare-metal-server" />
     <p class="text-3xl">Projects</p>
   </div>
-  <!-- <div class="flex  flex-wrap text-white ">
-    <div v-for="project in projects" :key="project.title"
-      class="m-4 p-4 bg-blue-500 rounded-lg w-full max-w-sm flex flex-col items-center">
-      <img :src="project.image" class="h-32 w-full object-cover rounded-lg" />
-      <div class="flex flex-col items-center w-full">
-        <p class="text-2xl my-2">{{ project.title }}</p>
-        <p class="text-xl my-2 text-center">{{ project.description }}</p>
-        <div class="flex justify-center space-x-4 mt-4">
-          <PillButton :url="project.links[0].url" :icon="project.links[0].icon" styles="bg-black" />
-          <PillButton :url="project.links[1].url" :icon="project.links[1].icon" styles="bg-black" />
-        </div>
-      </div>
-    </div>
-  </div> -->
 
-  <div v-for="project in  projects " :key="project.title" class="flex m-4 p-4 bg-gray rounded-lg shadow
-  shadow-sm shadow-black ">
+
+  <main v-for="project in  projects " :key="project.title" class=" flex h-fit w-1/2 justify-center mx-auto my-2 p-2  bg-gray rounded-lg shadow
+  shadow-sm shadow-black">
+
     <img :src="project.image" class=" h-64 w-64 object-cover rounded-lg" />
 
     <div class="flex flex-col justify-center w-full">
@@ -97,6 +86,7 @@ const projects: Project[] = [{
       </div>
     </div>
 
-  </div>
+
+  </main>
 </template>
 
