@@ -18,11 +18,11 @@ const contactMeText = {
   z <main class="text-white flex flex-col justify-center  w-1/2 mx-auto h-100vh align-top ">
 
     <div class="flex justify-center space-x-4">
-      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:email"
+      <PillButton styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full " icon="carbon:email"
         :href="'mailto:' + contactMeText.email + '?subject=Front end developer position'" />
-      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-github"
+      <PillButton styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full " icon="carbon:logo-github"
         :href="contactMeText.gitHub" />
-      <PillButton styles="bg-black hover:bg-gray hover:rounded-full " icon="carbon:logo-linkedin"
+      <PillButton styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full " icon="carbon:logo-linkedin"
         :href="contactMeText.linkedIn" />
     </div>
 
