@@ -30,7 +30,7 @@ const info = ref(
     <img src="../assets/marcoprofile.jpg" class="h-24 w-24 mx-2 self-center rounded-full object-cover" />
     <div class="flex flex-col text-white justify-start items-center">
       <p class="text-6xl">{{ info.title }} {{ info.name }}</p>
-      <p class="text-5xl"> I'm a <span class="text-5xl text-blue-500"> {{ info.role }} </span> developer</p>
+      <p class="text-5xl"> I'm a <span class="text-5xl text-[#910A67]"> {{ info.role }} </span> developer</p>
 
     </div>
   </div>
