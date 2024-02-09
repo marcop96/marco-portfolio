@@ -13,12 +13,12 @@ defineProps({
 </script>
 
 <template>
-  <main class=" flex h-fit w-1/2 justify-center mx-auto my-2 p-2  bg-gray rounded-lg shadow
-  shadow-sm shadow-black">
+  <main class=" flex h-fit w-1/2 justify-center mx-auto my-2 p-2  bg-[#3C0753] rounded-lg shadow
+  shadow-sm shadow-[#3C0753]">
 
     <img :src="project.image" class=" h-64 w-64 object-cover rounded-lg" />
 
-    <div class="flex flex-col justify-center w-full">
+    <div class="flex flex-col justify-center w-full text-white">
       <p class="text-2xl w-fit ">{{ project.title }}</p>
       <div class="flex space-x-2 justify-center w-fit">
         <PillButton v-for="technology in project.technologies" :key="technology" :icon="technology"
