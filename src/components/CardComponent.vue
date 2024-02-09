@@ -27,7 +27,7 @@ defineProps({
       <p class=" my-2  max-w-96  overscroll-auto">{{ project.description }}</p>
 
 
-      <div class="flex justify-end ">
+      <div class="flex justify-end p-3">
         <PillButton v-for="link in project.links" :key="link.name" :url="link.url" :icon="link.icon"
           styles="bg-white text-black  h-fit align-bottom rounded-xl mx-1 w-fit hover:bg-dark hover:text-white " />
       </div>

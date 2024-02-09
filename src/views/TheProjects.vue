@@ -6,7 +6,7 @@ import CardComponent from '@/components/CardComponent.vue';
 const projects: Project[] = [{
   title: 'Ecommerce site',
   description: 'A frontend project made with VueJS to create a fully functional ecommerce site.',
-  image: '@/assets/img/vuecommerce-img.png',
+  image: './assets/vuecommerce-img.png',
   technologies: ['devicon:vuejs', 'devicon:tailwindcss', 'devicon:vercel'],
   links: [
     {
