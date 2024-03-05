@@ -1,22 +1,21 @@
 <script setup lang='ts'>
-import type { Project } from '@/types';
-import PillButton from '@/components/PillButton.vue';
+import type { Project } from '@/types'
+import PillButton from '@/components/PillButton.vue'
 
-defineProps({
+const props = defineProps({
   project: {
     type: Object as () => Project,
-    required: true
-  }
+    required: true,
+  },
 })
 
-
+const img = `/assets/${props.project.image}`
 </script>
 
 <template>
   <main class=" flex h-fit w-1/2 justify-center mx-auto my-2 p-2  bg-[#3C0753] rounded-lg shadow
   shadow-sm shadow-[#3C0753]">
-
-    <img :src="project.image" class=" h-64 w-64 object-cover rounded-lg" />
+    <img :src="img" class=" h-64 w-64 object-cover rounded-lg" />
 
     <div class="flex flex-col justify-center w-full text-white">
       <p class="text-2xl w-fit ">{{ project.title }}</p>
@@ -25,7 +24,6 @@ defineProps({
           styles="bg-white rounded-full  " />
       </div>
       <p class=" my-2  max-w-96  overscroll-auto">{{ project.description }}</p>
-
 
       <div class="flex justify-end p-3">
         <PillButton v-for="link in project.links" :key="link.name" :url="link.url" :icon="link.icon"
