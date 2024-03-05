@@ -15,7 +15,7 @@ const contactMeText = {
 </script>
 
 <template>
-  z <main class="text-white flex flex-col justify-center  w-1/2 mx-auto h-100vh align-top ">
+  z <main class="text-white flex flex-col justify-center  w-1/2 mx-auto h-100vh ">
 
     <div class="flex justify-center space-x-4">
       <PillButton styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full " icon="carbon:email"
