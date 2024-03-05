@@ -8,16 +8,19 @@ const props = defineProps({
   },
 });
 
-const getImageUrl = (path: string): string => {
-  return new URL(`../assets/${path}`, import.meta.url).href;
-};
+function getImageUrl(name: String) {
+  return new URL(`../assets/${name}`, import.meta.url).href;
+}
 </script>
 
 <template>
   <main
     class="flex h-fit w-1/2 justify-center mx-auto my-2 p-2 bg-[#3C0753] rounded-lg shadow shadow-sm shadow-[#3C0753]"
   >
-    <img :src="props.project.image" class="h-64 w-64 object-cover rounded-lg" />
+    <img
+      :src="getImageUrl(props.project.image)"
+      class="h-48 w-48 object-cover rounded-lg mx-2 my-2 p-2 shadow-lg shadow-[#3C0753]"
+    />
 
     <div class="flex flex-col justify-center w-full text-white">
       <p class="text-2xl w-fit">{{ project.title }}</p>

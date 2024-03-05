@@ -8,7 +8,7 @@ const projects: Project[] = [
   {
     title: "Trello clone",
     description: "A Trello clone with drag & drop and customizable workspaces.",
-    image: "./assets/trello-img.png",
+    image: "trello-img.png",
     technologies: ["devicon:vuejs", "devicon:tailwindcss", "devicon:nuxtjs"],
     links: [
       {
@@ -46,7 +46,7 @@ const projects: Project[] = [
     title: "FutbOrg",
     description:
       "Football organization project with a google sheets backend to manage teams, matches and players.",
-    image: "./assets/futborg-img.png",
+    image: "futborg-img.png",
     technologies: ["devicon:vuejs", "devicon:googlecloud"],
     links: [
       {
@@ -65,7 +65,7 @@ const projects: Project[] = [
     title: "Expense tracker app",
     description:
       "An app made with React to track expenses and income. It uses local storage to save the data.",
-    image: "./assets/expense-tracker-img.png",
+    image: "expense-tracker-img.png",
     technologies: ["devicon:react", "devicon:tailwindcss"],
     links: [
       {
