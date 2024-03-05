@@ -19,7 +19,7 @@ function getImageUrl(name: String) {
   >
     <img
       :src="getImageUrl(props.project.image)"
-      class="h-48 w-48 object-cover rounded-lg mx-2 my-2 p-2 shadow-lg shadow-[#3C0753]"
+      class="h-48 w-48 object-cover rounded-xl mx-2 my-2 p-2 shadow-lg shadow-[#3C0753]"
     />
 
     <div class="flex flex-col justify-center w-full text-white">

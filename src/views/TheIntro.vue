@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { Icon } from "@iconify/vue";
+
 const info = ref({
   title: "Hi, I'm",
   name: "Marco",

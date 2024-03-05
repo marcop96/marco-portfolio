@@ -8,7 +8,7 @@ const projects: Project[] = [
   {
     title: "Trello clone",
     description: "A Trello clone with drag & drop and customizable workspaces.",
-    image: "trello-img.png",
+    image: "trello-nuxt.png",
     technologies: ["devicon:vuejs", "devicon:tailwindcss", "devicon:nuxtjs"],
     links: [
       {
@@ -42,25 +42,25 @@ const projects: Project[] = [
       },
     ],
   },
-  {
-    title: "FutbOrg",
-    description:
-      "Football organization project with a google sheets backend to manage teams, matches and players.",
-    image: "futborg-img.png",
-    technologies: ["devicon:vuejs", "devicon:googlecloud"],
-    links: [
-      {
-        name: "Github",
-        url: "https://www.github.com/",
-        icon: "carbon:logo-github",
-      },
-      {
-        name: "deploy",
-        url: "https://vuecommerce-nine.vercel.app/",
-        icon: "carbon:deploy",
-      },
-    ],
-  },
+  // {
+  //   title: "FutbOrg",
+  //   description:
+  //     "Football organization project with a google sheets backend to manage teams, matches and players.",
+  //   image: "futborg-img.png",
+  //   technologies: ["devicon:vuejs", "devicon:googlecloud"],
+  //   links: [
+  //     {
+  //       name: "Github",
+  //       url: "https://www.github.com/",
+  //       icon: "carbon:logo-github",
+  //     },
+  //     {
+  //       name: "deploy",
+  //       url: "https://vuecommerce-nine.vercel.app/",
+  //       icon: "carbon:deploy",
+  //     },
+  //   ],
+  // },
   {
     title: "Expense tracker app",
     description:
