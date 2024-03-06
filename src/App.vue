@@ -4,9 +4,9 @@ import TheHeader from "@/components/TheHeader.vue";
 </script>
 
 <template>
-  <div class="flex flex-col justify-center bg-[#030637]">
+  <div class="flex flex-col h-full justify-center bg-[#030637]">
     <TheHeader />
 
-    <RouterView />
+    <RouterView class="h" />
   </div>
 </template>

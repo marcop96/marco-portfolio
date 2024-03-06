@@ -15,7 +15,7 @@ function getImageUrl(name: String) {
 
 <template>
   <main
-    class="flex flex-col md:flex-row h-fit w-1/2 justify-center mx-auto my-2 p-2 bg-[#3C0753] rounded-lg shadow shadow-sm shadow-[#3C0753]"
+    class="flex flex-col md:flex-row h-fit w-1/2 justify-center mx-auto my-2 p-8 bg-[#3C0753] rounded-lg shadow shadow-sm shadow-[#3C0753]"
   >
     <img
       :src="getImageUrl(props.project.image)"

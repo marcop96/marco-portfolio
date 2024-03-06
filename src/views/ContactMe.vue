@@ -14,37 +14,36 @@ const contactMeText = {
 </script>
 
 <template>
-  z
-  <main class="text-white flex flex-col p-4 w-2/3 mx-auto h-100vh">
-    <div class="flex justify-center space-x-4">
-      <PillButton
-        styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
-        icon="carbon:email"
-        :href="
-          'mailto:' +
-          contactMeText.email +
-          '?subject=Front end developer position'
-        "
-      />
-      <PillButton
-        styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
-        icon="carbon:logo-github"
-        :href="contactMeText.gitHub"
-      />
-      <PillButton
-        styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
-        icon="carbon:logo-linkedin"
-        :href="contactMeText.linkedIn"
-      />
-    </div>
-
-    <div class="p-6">
-      <h1 class="text-3xl">Contact Me</h1>
-      <p>{{ contactMeText.introduction }}</p>
-    </div>
-    <div class="p-6">
-      <h1 class="text-3xl">Let's Build Together</h1>
-      <p>{{ contactMeText.buildTogether }}</p>
+  <main
+    class="text-white flex flex-col p-12 md:w-2/3 w-1/3 mx-auto min-h-100vh items-center"
+  >
+    <div class="bg-[#3C0753] rounded-lg p-8">
+      <h1 class="text-3xl font-bold mb-6">Contact Me</h1>
+      <p class="text-lg mb-6">{{ contactMeText.introduction }}</p>
+      <h1 class="text-3xl font-bold mb-6">Let's build together</h1>
+      <p class="text-lg mb-6">{{ contactMeText.buildTogether }}</p>
+      <div class="flex justify-center space-x-4">
+        <PillButton
+          styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
+          icon="carbon:email"
+          :href="
+            'mailto:' +
+            contactMeText.email +
+            '?subject=Front end developer position'
+          "
+        />
+        <PillButton
+          styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
+          icon="carbon:logo-github"
+          :href="contactMeText.gitHub"
+        />
+        <PillButton
+          styles="bg-white text-black rounded-full hover:bg-gray hover:rounded-full "
+          icon="carbon:logo-linkedin"
+          :href="contactMeText.linkedIn"
+        />
+      </div>
     </div>
   </main>
 </template>
+<style scoped></style>
