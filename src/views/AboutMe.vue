@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="text-white flex flex-col justify-center w-1/2 mx-auto h-full p-4 align-top"
+    class="text-white flex flex-col justify-center w-2/3 mx-auto h-full p-4 align-top"
   >
     <p class="text-lg mb-6">
       As a front-end developer, I combine my passion for gaming with my
