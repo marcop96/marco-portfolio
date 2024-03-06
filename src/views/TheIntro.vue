@@ -29,11 +29,13 @@ const info = ref({
       src="../assets/marcoprofile.jpg"
       class="h-24 w-24 mx-2 self-center rounded-full object-cover"
     />
-    <div class="flex flex-col text-white justify-start items-center">
-      <p class="text-6xl">{{ info.title }} {{ info.name }}</p>
-      <p class="text-5xl">
-        <span class="text-5xl text-[#910A67]"> {{ info.role }} </span> developer
-      </p>
-    </div>
+    <div class="flex flex-col justify-center items-center p-4"></div>
+    <p class="text-6xl text-center">{{ info.title }} {{ info.name }}</p>
+    <p class="text-5xl text-center">
+      <span class="text-5xl text-[#910A67] text-center">
+        {{ info.role }}
+      </span>
+      developer
+    </p>
   </div>
 </template>
