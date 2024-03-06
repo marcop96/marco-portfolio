@@ -15,21 +15,21 @@ function getImageUrl(name: String) {
 
 <template>
   <main
-    class="flex h-fit w-1/2 justify-center mx-auto my-2 p-2 bg-[#3C0753] rounded-lg shadow shadow-sm shadow-[#3C0753]"
+    class="flex flex-col md:flex-row h-fit w-1/2 justify-center mx-auto my-2 p-2 bg-[#3C0753] rounded-lg shadow shadow-sm shadow-[#3C0753]"
   >
     <img
       :src="getImageUrl(props.project.image)"
-      class="h-48 w-48 object-cover rounded-xl mx-2 my-2 p-2 shadow-lg shadow-[#3C0753]"
+      class="h-48 w-48 object-cover justify-center rounded-xl mx-2 my-2 p-2 shadow-lg shadow-[#3C0753]"
     />
 
     <div class="flex flex-col justify-center w-full text-white">
-      <p class="text-2xl w-fit">{{ project.title }}</p>
-      <div class="flex space-x-2 justify-center w-fit">
+      <p class="text-2xl w-fit text-center">{{ project.title }}</p>
+      <div class="flex space-x-2 justify-center items-center w-fit">
         <PillButton
           v-for="technology in project.technologies"
           :key="technology"
           :icon="technology"
-          styles="bg-white rounded-full  "
+          styles="bg-white rounded-full"
         />
       </div>
       <p class="my-2 max-w-96 overscroll-auto">{{ project.description }}</p>

@@ -96,5 +96,6 @@ const projects: Project[] = [
     v-for="project in projects"
     :key="project.title"
     :project="project"
+    class="w-2/3"
   />
 </template>
