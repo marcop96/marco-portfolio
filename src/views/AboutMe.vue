@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="text-white flex flex-col p-12 md:w-2/3 min-h-100vh w-1/3 mx-auto h-100vh items-center"
+    class="text-white flex flex-col  p-12  mx-auto h-100dvh"
   >
     <div class="bg-[#3C0753] rounded-lg p-8">
       <h1 class="text-3xl font-bold mb-6">About Me</h1>
